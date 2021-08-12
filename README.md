@@ -27,7 +27,7 @@ docker run --rm -it --publish 8888:8888 conda --port 8888 --ip 0.0.0.0 --no-brow
 ## tensorflow24.Dockerfile
 
 ```
-docker run --rm -it --publish 8888:8888 conda --port 8888 --ip 0.0.0.0
+docker build --tag tensorflow:2.4 --file tensorflow24.Dockerfile .
 ```
 
 ## python-env
@@ -38,5 +38,5 @@ the docker image when it is being built, and we install the python packages list
 there.
 
 ```
-docker run --rm -it --publish 8888:8888 conda --port 8888 --ip 0.0.0.0
+docker build --tag mypyenv python-env
 ```
